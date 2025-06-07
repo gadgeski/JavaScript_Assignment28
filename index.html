@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>-メモがローカルストレージに保存されちゃいます-</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="box">ローカルストレージに保存</div>
+    <br />
+    <div class="storage-container">
+      <label for="memoText">メモを入力してください:</label>
+      <textarea
+        id="memoText"
+        rows="10"
+        placeholder="ここにメモを入力..."
+      ></textarea>
+      <button id="saveButton">メモを保存</button>
+      <p class="note">
+        このメモはブラウザに保存され、ページを閉じても残ります。
+      </p>
+      <div class="saved-data-display">
+        <h2>保存されたメモ:</h2>
+        <p id="displayMemo"></p>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
